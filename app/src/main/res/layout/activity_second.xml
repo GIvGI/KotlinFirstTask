@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            app:srcCompat="@drawable/backgroundcontact" />
+
+        <TextView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="48dp"
+            android:text="Payment"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/contactInformationView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Information"
+            android:textSize="15sp"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="50dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <TextView
+            android:id="@+id/mobileandemailView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+91987654321\ngmail@example.com"
+            app:layout_constraintEnd_toEndOf="@+id/contactInformationView"
+            app:layout_constraintStart_toStartOf="@+id/contactInformationView"
+            app:layout_constraintTop_toBottomOf="@+id/contactInformationView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/priceView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="$$$$$$"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/descriptionView"
+            app:layout_constraintTop_toTopOf="@+id/descriptionView" />
+
+        <TextView
+            android:id="@+id/descriptionView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="This is an amazing car.\nIt goes really fast and is cheap"
+            app:layout_constraintStart_toEndOf="@+id/roundCarView"
+            app:layout_constraintTop_toTopOf="@+id/roundCarView" />
+
+        <ImageView
+            android:id="@+id/discountView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/itemView"
+            app:srcCompat="@drawable/discount" />
+
+        <ImageView
+            android:id="@+id/roundCarView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/itemView"
+            app:layout_constraintStart_toStartOf="@+id/itemView"
+            app:layout_constraintTop_toBottomOf="@+id/itemView"
+            app:srcCompat="@drawable/roundcar" />
+
+        <TextView
+            android:id="@+id/itemView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="243dp"
+            android:text="Item"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/rectangleoneView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="@+id/shippingOptionsView"
+            app:layout_constraintTop_toBottomOf="@+id/shippingOptionsView"
+            app:srcCompat="@drawable/shippingrectangle" />
+
+        <ImageView
+            android:id="@+id/circleView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/rectangleoneView"
+            app:layout_constraintStart_toStartOf="@+id/rectangleoneView"
+            app:layout_constraintTop_toTopOf="@+id/rectangleoneView"
+            app:srcCompat="@drawable/ellipse" />
+
+        <TextView
+            android:id="@+id/shippingOptionsView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ShippingOptions"
+            android:layout_marginTop="410dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/rectangletwoView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/rectangleoneView"
+            app:layout_constraintStart_toStartOf="@+id/rectangleoneView"
+            app:layout_constraintTop_toBottomOf="@+id/rectangleoneView"
+            app:srcCompat="@drawable/shippingrectangle" />
+
+        <ImageView
+            android:id="@+id/circleView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/rectangletwoView"
+            app:layout_constraintStart_toStartOf="@+id/rectangletwoView"
+            app:layout_constraintTop_toTopOf="@+id/rectangletwoView"
+            app:srcCompat="@drawable/ellipse" />
+
+        <TextView
+            android:id="@+id/expressPriceView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginRight="20dp"
+            android:text="$1,700"
+            app:layout_constraintBottom_toBottomOf="@+id/rectangletwoView"
+            app:layout_constraintEnd_toEndOf="@+id/rectangletwoView"
+            app:layout_constraintTop_toTopOf="@+id/rectangletwoView" />
+
+        <TextView
+            android:id="@+id/standardPriceView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginRight="20dp"
+            android:text="FREE"
+            app:layout_constraintBottom_toBottomOf="@+id/rectangleoneView"
+            app:layout_constraintEnd_toEndOf="@+id/rectangleoneView"
+            app:layout_constraintTop_toTopOf="@+id/rectangleoneView" />
+
+        <ImageView
+            android:id="@+id/checkmarkView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:tint="@android:color/holo_blue_bright"
+            app:layout_constraintBottom_toBottomOf="@+id/rectangletwoView"
+            app:layout_constraintStart_toStartOf="@+id/rectangletwoView"
+            app:layout_constraintTop_toTopOf="@+id/rectangletwoView"
+            app:srcCompat="@drawable/checkmark" />
+
+        <TextView
+            android:id="@+id/shippinginfoView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivered on or before Thursday, 23 April 2026"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="@+id/rectangletwoView"
+            app:layout_constraintTop_toBottomOf="@+id/rectangletwoView" />
+
+        <TextView
+            android:id="@+id/freeoptionView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Express"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="30dp"
+            app:layout_constraintBottom_toBottomOf="@+id/rectangletwoView"
+            app:layout_constraintStart_toStartOf="@+id/rectangletwoView"
+            app:layout_constraintTop_toTopOf="@+id/rectangletwoView" />
+
+        <TextView
+            android:id="@+id/expressOptionView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Standard"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginLeft="30dp"
+            app:layout_constraintBottom_toBottomOf="@+id/rectangleoneView"
+            app:layout_constraintStart_toStartOf="@+id/rectangleoneView"
+            app:layout_constraintTop_toTopOf="@+id/rectangleoneView" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/totalrectangle" />
+
+        <Button
+            android:id="@+id/payButtonView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#000000"
+            android:text="Pay"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageView9"
+            app:layout_constraintTop_toTopOf="@+id/imageView9" />
+
+        <TextView
+            android:id="@+id/totalView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView9" />
+
+        <TextView
+            android:id="@+id/pricetotalView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:text="$#$#$#$#"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/totalView"
+            app:layout_constraintTop_toTopOf="@+id/imageView9" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

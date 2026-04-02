@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/shopView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shop"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:textColor="#000000"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="35dp"
+            tools:layout_editor_absoluteY="28dp" />
+
+        <ImageView
+            android:id="@+id/filterView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="46dp"
+            app:layout_constraintStart_toEndOf="@+id/searchView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/filtericon" />
+
+        <ImageView
+            android:id="@+id/searchView"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/shopView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/rectanglefirstpage" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/searchView"
+            app:layout_constraintEnd_toEndOf="@+id/searchView"
+            app:layout_constraintTop_toTopOf="@+id/searchView"
+            app:srcCompat="@drawable/cameraicon" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clothing"
+            android:layout_marginLeft="20dp"
+            android:textSize="18sp"
+            android:textColor="#0042E0"
+            app:layout_constraintBottom_toBottomOf="@+id/searchView"
+            app:layout_constraintStart_toStartOf="@+id/searchView"
+            app:layout_constraintTop_toTopOf="@+id/searchView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/car4priceView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="$260,000"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/car4textView"
+            app:layout_constraintTop_toBottomOf="@+id/car4textView" />
+
+        <TextView
+            android:id="@+id/car3priceView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="$189,000"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/car3textView"
+            app:layout_constraintTop_toBottomOf="@+id/car3textView" />
+
+        <TextView
+            android:id="@+id/car2priceView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="$46,400"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/car2textView"
+            app:layout_constraintTop_toBottomOf="@+id/car2textView" />
+
+        <TextView
+            android:id="@+id/car1priceView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="$38,000"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/car1textView"
+            app:layout_constraintTop_toBottomOf="@+id/car1textView" />
+
+        <TextView
+            android:id="@+id/car4textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ferrari 488 Spider"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="@+id/car4Button"
+            app:layout_constraintTop_toBottomOf="@+id/car4Button" />
+
+        <TextView
+            android:id="@+id/car3textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Porsche 911 GT3 RS\n (991.1 Generation)"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="@+id/car3Button"
+            app:layout_constraintTop_toBottomOf="@+id/car3Button" />
+
+        <TextView
+            android:id="@+id/car2textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mercedes-Benz CLA-Class\n(Second Generation)"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="@+id/car2Button"
+            app:layout_constraintTop_toBottomOf="@+id/car2Button" />
+
+        <TextView
+            android:id="@+id/car1textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BMW M3 (F80 generation)"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="@+id/car1Button"
+            app:layout_constraintTop_toBottomOf="@+id/car1Button" />
+
+        <ImageButton
+            android:id="@+id/car1Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            app:layout_constraintEnd_toStartOf="@+id/car2Button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/car1" />
+
+        <ImageButton
+            android:id="@+id/car2Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/car1Button"
+            app:srcCompat="@drawable/car2" />
+
+        <ImageButton
+            android:id="@+id/car3Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            app:layout_constraintEnd_toStartOf="@+id/car4Button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/car1Button"
+            app:srcCompat="@drawable/car3" />
+
+        <ImageButton
+            android:id="@+id/car4Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_marginRight="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/car2Button"
+            app:srcCompat="@drawable/car4" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
