@@ -20,7 +20,7 @@ class ThirdActivity : AppCompatActivity() {
             insets
         }
 
-
+        //Go to first page დაჭერისას ვბრუნდებით პირველ გვერდზე
         val button: Button = findViewById(R.id.button)
         button.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)

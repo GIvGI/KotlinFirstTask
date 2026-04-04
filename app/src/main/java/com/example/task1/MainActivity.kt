@@ -8,6 +8,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
+/*XML ფაილებში არამგონია საჭირო იყოს რაიმე კომენტარების წერა, რადგან mark-up language არის წესით და რიგით ყველაფერი რაც გაკეთებული მაქვს თვითახსნადი უნდა იყოს.
+* ერთადერთი რაც აღსანიშნავია არის ის, რომ მანქანების ღილაკებს პირველ გვერდზე რომ მომრგვალებული მართხკუთხედები ჰქონოდათ Background-ად საჭირო იყო res/drawable
+* დირექტორიაში round_button მარტივი custom background-ის გაკეთება.*/
+
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,38 +23,42 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
+        //ღილაკზე დაჭერის Listeners, რომლებიც ღილაკზე დაჭერისას Activity-ს ცვლიან და გარდა ამისა
+        //მეორე Activity-ს აწვდიან მანქანის სახელისა და ფასის მონაცემებს. ფასი, რადგან Double ტიპად
+        //იყო მოთხოვნილი შესაბამისად .0-ები უწერია ყველას ბოლოში
+
         val button: ImageButton = findViewById(R.id.car1Button)
         button.setOnClickListener {
             val intent = Intent(this, SecondActivity::class.java)
-            intent.putExtra("car1name","BMW M3 (F80 generation)")
-            intent.putExtra("car1price","$38,000")
+            intent.putExtra("carName","BMW M3 (F80 generation)")
+            intent.putExtra("carPrice",38000.0)
             startActivity(intent)
         }
 
 
         val button2: ImageButton = findViewById(R.id.car2Button)
-        button.setOnClickListener {
+        button2.setOnClickListener {
             val intent = Intent(this, SecondActivity::class.java)
-            intent.putExtra("car2name","Mercedes-Benz CLA-Class (Second Generation)")
-            intent.putExtra("car2price","$46,400")
+            intent.putExtra("carName","Mercedes-Benz CLA-Class (Second Generation)")
+            intent.putExtra("carPrice",46400.0)
             startActivity(intent)
         }
 
 
         val button3: ImageButton = findViewById(R.id.car3Button)
-        button.setOnClickListener {
+        button3.setOnClickListener {
             val intent = Intent(this, SecondActivity::class.java)
-            intent.putExtra("car3name","Porsche 911 GT3 RS (991.1 Generation)")
-            intent.putExtra("car3price","$189,000")
+            intent.putExtra("carName","Porsche 911 GT3 RS (991.1 Generation)")
+            intent.putExtra("carPrice",189000.0)
             startActivity(intent)
         }
 
 
         val button4: ImageButton = findViewById(R.id.car4Button)
-        button.setOnClickListener {
+        button4.setOnClickListener {
             val intent = Intent(this, SecondActivity::class.java)
-            intent.putExtra("car4name","Ferrari 488 Spider")
-            intent.putExtra("car4price","$260,000")
+            intent.putExtra("carName","Ferrari 488 Spider")
+            intent.putExtra("carPrice",260000.0)
             startActivity(intent)
         }
     }
