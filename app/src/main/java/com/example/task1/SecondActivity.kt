@@ -34,6 +34,10 @@ class SecondActivity : AppCompatActivity() {
         val priceView : TextView = findViewById(R.id.priceView)
         val pricetotalView : TextView = findViewById(R.id.pricetotalView)
 
+        //მანქანის სახელი
+        val itemView : TextView = findViewById(R.id.itemView)
+        itemView.text = carName
+
         //რადგან ფასი Double ტიპის უნდა ყოფილიყო, პირდაპირ String-ის გადმოცემა "$38,000"-ად არ იმუშავებდა, ამიტომ
         //საჭირო იყო ამ ფასის ვალუტად კონვერტირება.
         var formattedPrice = java.text.NumberFormat.getCurrencyInstance().format(carPrice)

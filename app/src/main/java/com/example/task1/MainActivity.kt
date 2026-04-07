@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
         val button2: ImageButton = findViewById(R.id.car2Button)
         button2.setOnClickListener {
             val intent = Intent(this, SecondActivity::class.java)
-            intent.putExtra("carName","Mercedes-Benz CLA-Class (Second Generation)")
+            intent.putExtra("carName","Mercedes-Benz CLA-Class\n (Second Generation)")
             intent.putExtra("carPrice",46400.0)
             startActivity(intent)
         }
@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
         val button3: ImageButton = findViewById(R.id.car3Button)
         button3.setOnClickListener {
             val intent = Intent(this, SecondActivity::class.java)
-            intent.putExtra("carName","Porsche 911 GT3 RS (991.1 Generation)")
+            intent.putExtra("carName","Porsche 911 GT3 RS\n (991.1 Generation)")
             intent.putExtra("carPrice",189000.0)
             startActivity(intent)
         }
